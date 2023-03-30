@@ -7,6 +7,10 @@
 * Python 3.9+
 * SQLAlchemy 2.0+
 
+## Install
+
+    pip install bixomix
+
 ## Usage
 
 Add mixins after the `Base` class in each model’s parent classes. The order of the mixins doesn’t matter.
