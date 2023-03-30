@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "bixomix"
+version = "0.1.0"
+description = "Collection of SQLAlchemy mixins"
+authors = ["Baptiste Fontaine <baptiste@bixoto.com>"]
+license = "MIT"
+homepage = "https://github.com/Bixoto/bixomix"
+include = ["bixomix/py.typed"]
+readme = "README.md"
+classifiers = [
+    'License :: OSI Approved :: MIT License',
+    "Development Status :: 5 - Production/Stable",
+    'Programming Language :: Python :: 3',
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+sqlalchemy = "^2.0"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1"
+pytest = "^7.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
