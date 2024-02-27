@@ -10,7 +10,11 @@ class CreatedAtMixin:
 
 
 class UpdatedAtMixin:
-    """SQLAlchemy mixin to add an `updated_at` datetime field to a table."""
+    """
+    SQLAlchemy mixin to add an `updated_at` datetime field to a table that’s set to `NOW()` every time the row is updated.
+    Note that on Postgres this creates the column but doesn't update it.
+    See https://stackoverflow.com/a/71072370/735926 for a possible solution.
+    """
     # NOTE:
     #   server_default= tells the DB the default column value while default= sets the default value at the ORM level.
     #   onupdate= sets the value on record update at the ORM level.

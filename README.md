@@ -33,5 +33,6 @@ class MyModel(Base, CreatedAtMixin):
 ## Mixins
 
 * `CreatedAtMixin`: add a `created_at` datetime field that’s automatically filled with the record’s creation date
-* `UpdatedAtMixin`: add an `updated_at` datetime field that’s automatically filled with the record’s last update date
+* `UpdatedAtMixin`: add an `updated_at` datetime field that’s automatically filled with the record’s last update date.
+  Note this doesn't work on Postgres; you have to [create a trigger](https://stackoverflow.com/a/71072370/735926).
 * `CreatedUpdatedAtMixin`: combined version of the previous two mixins
