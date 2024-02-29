@@ -2,7 +2,7 @@
 
 ## Unreleased
 
-* Document `UpdatedAtMixin`’s incompatibility with Postgres (#1)
+* Document `UpdatedAtMixin`’s compatibility with Postgres (#1)
 
 ## 0.1.0 (2023/03/30)
 

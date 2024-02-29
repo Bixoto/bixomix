@@ -12,7 +12,8 @@ class CreatedAtMixin:
 class UpdatedAtMixin:
     """
     SQLAlchemy mixin to add an `updated_at` datetime field to a table that’s set to `NOW()` every time the row is updated.
-    Note that on Postgres this creates the column but doesn't update it.
+    Note that on Postgres this creates the column but update it only from Python. If you need database-level update, use
+    a trigger.
     See https://stackoverflow.com/a/71072370/735926 for a possible solution.
     """
     # NOTE:
