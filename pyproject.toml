@@ -20,6 +20,8 @@ sqlalchemy = "^2.0"
 
 [tool.poetry.group.dev.dependencies]
 mypy = "^1"
+pytest = "^8.1.0"
+pytest-coverage = "^0.0"
 
 [build-system]
 requires = ["poetry-core"]
