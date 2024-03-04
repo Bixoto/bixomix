@@ -1,6 +1,6 @@
 # Bixomix Changelog
 
-## 0.1.1 (unreleased)
+## 0.1.1 (2024/03/04)
 
 * Add `EnabledMixin`, `EnabledNoMixin`
 * Add `UpdateFromDictMixin`
