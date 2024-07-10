@@ -1,5 +1,9 @@
 # Bixomix Changelog
 
+## 0.1.2 (2024/07/10)
+
+* `update_from_dict`: generalize to accept a `Mapping` and not just a `dict`
+
 ## 0.1.1 (2024/03/04)
 
 * Add `EnabledMixin`, `EnabledNoMixin`

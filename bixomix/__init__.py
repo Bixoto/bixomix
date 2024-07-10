@@ -6,7 +6,7 @@ from sqlalchemy import func
 from .dates import CreatedAtMixin, UpdatedAtMixin, CreatedUpdatedAtMixin
 from .states import EnabledMixin, EnabledNoMixin
 
-__version__ = "0.1.1"
+__version__ = "0.1.2"
 __all__ = [
     'CreatedAtMixin', 'UpdatedAtMixin', 'CreatedUpdatedAtMixin',
     'EnabledMixin', 'EnabledNoMixin',
