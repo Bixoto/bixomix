@@ -1,4 +1,4 @@
-from typing import Any
+from typing import Any, Mapping
 from warnings import warn
 
 from sqlalchemy import func
@@ -15,7 +15,7 @@ __all__ = [
 
 
 class UpdateFromDictMixin:
-    def update_from_dict(self, updates: dict[str, Any], *, always_set_last_update=False):
+    def update_from_dict(self, updates: Mapping[str, Any], *, always_set_last_update=False):
         """
         Update the model in-place from a dictionary of attributes.
         If the model has a column named ``<attr>_last_update`` and ``<attr>`` is in the updates dictionary,
