@@ -6,7 +6,7 @@ from sqlalchemy import func
 from .dates import CreatedAtMixin, UpdatedAtMixin, CreatedUpdatedAtMixin
 from .states import EnabledMixin, EnabledNoMixin
 
-__version__ = "0.1.2"
+__version__ = "0.1.3"
 __all__ = [
     'CreatedAtMixin', 'UpdatedAtMixin', 'CreatedUpdatedAtMixin',
     'EnabledMixin', 'EnabledNoMixin',
@@ -15,7 +15,7 @@ __all__ = [
 
 
 class UpdateFromDictMixin:
-    def update_from_dict(self, updates: Mapping[str, Any], *, always_set_last_update=False):
+    def update_from_dict(self, updates: Mapping[str, Any], *, always_set_last_update: bool = False) -> None:
         """
         Update the model in-place from a dictionary of attributes.
         If the model has a column named ``<attr>_last_update`` and ``<attr>`` is in the updates dictionary,
