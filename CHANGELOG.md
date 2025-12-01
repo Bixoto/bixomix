@@ -1,12 +1,9 @@
 # Bixomix Changelog
 
-## Unreleased
-
-* Add explicit support for Python 3.13, 3.14
-
 ## 0.1.3 (2025/12/01)
 
 * `update_from_dict`: type all arguments
+* Add explicit support for Python 3.13, 3.14
 
 ## 0.1.2 (2024/07/10)
 
